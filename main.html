@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="static/css/main.css">
+    <script src="https://kit.fontawesome.com/db0e49f63a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="static/images/logo.png" alt="Error" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Apprentice Developer</p>
+                <h1>Hi I am <span>Jerome</span><br>Otieno from Zone01</h1>
+            </div>
+        </div>
+    </div>
+ <!--About section-->   
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="static/images/User.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi! I'm Jerome Otieno, a 19-years-old apprentice at Zone01. My journey began at St Anne's Academy for primary school, followed by
+                        Maseno School for high school. Currently I'm an apprentice at Zone01 Kisumu as an apprentice striving to achieve my dream of being 
+                        a software developer. I've developed strong skills in Go, HTML, and C# and enjoy tackling new tech challenges. Beyond coding, I'm 
+                        passionate about basketball and love unwinding with video games. Excited to keep growing and making an impact in the tech world!
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Golang</span><br>Software programmer</li>
+                            <li><span>UI</span><br>Web app developer</li>
+                            <li><span>HTML</span><br>Web app developer</li>
+                            <li><span>C#</span><br>Game programmer</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Zone01 Apprentice</li>
+                            <li><span>2023 - 2024</span><br>Wells oil part time</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Apprentice at Zone01</li>
+                            <li><span>2021 - 2023</span><br>Maseno School</li>
+                            <li><span>2020 - 2021</span><br>Kakamega High School</li>
+                            <li><span>2011 - 2019</span><br>St Anne's Academy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Services place-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design involves creating and designing websites to deliver a seamless user experience and visually appealing layout.</p>
+                    <a href="https://brainstation.io/career-guides/what-is-web-development">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2>Game Design</h2>
+                    <p>Game design focuses on creating engaging and immersive gaming experiences. It includes designing gameplay mechanics, storylines, characters, levels, and interactive elements. </p>
+                    <a href="https://www.freecodecamp.org/news/what-is-game-development/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>App design</h2>
+                    <p>App design is the process of conceptualizing and designing mobile or desktop applications to provide effective solutions and intuitive user experiences. </p>
+                    <a href="https://www.ibm.com/topics/mobile-application-development">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="static/images/healthy.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Healthy U</h3>
+                        <p>A nutritional aid app that helps people suffering from a deficiency disease from majorly impacting their daily lives.</p>
+                        <a href="https://github.com/Jerome-afk/healthy_u"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="static/images/finderr.jpeg">
+                    <div class="layer">
+                      <h3>Finderr</h3>
+                      <p>A simple web application that automatically search for media in the internet and downloads them.</p>
+                      <a href="https://github.com/Jerome-afk/Finderr"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="static/images/rbd.jpeg">
+                    <div class="layer">
+                      <h3>Beyond Regret</h3>
+                      <p>A short 3D thriller game on mystery and puzzle solving. Meant to test your wights and wills and give a little scare here and there.</p>
+                      <a href="https://github.com/Jerome-afk/BeyondRegret"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Contacts-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>otienojerome6@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+254-719-731-405</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100083133406898"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/cynical9/profilecrad/?igsh=MW45NXJpeGh1cHp4eA=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Jerome-afk"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="/send" method="post">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        <textarea name="message" id="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ Jerome</p>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
