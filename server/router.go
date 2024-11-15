@@ -43,7 +43,7 @@ func InitServer() *gin.Engine {
 		message := c.PostForm("message")
 
 		if name == "" || email == "" || message == "" {
-			c.JSON(http.StatusBadRequest, gin.H{"error": "All fields are required"})
+			c.HTML(http.StatusBadRequest, "main.html", gin.H{"error": "All fields are required"})
 			return
 		}
 
@@ -77,7 +77,7 @@ func InitServer() *gin.Engine {
 				"message": "Failed to send message.Please try again later.",
 			}
 
-			c.JSON(http.StatusInternalServerError, response)
+			c.HTML(http.StatusInternalServerError, "main.html", response)
 			return
 		}
 
@@ -85,7 +85,7 @@ func InitServer() *gin.Engine {
 			"status": "success",
 			"message": "Your message was sent successfully!",
 		}
-		c.JSON(http.StatusOK, response)
+		c.HTML(http.StatusOK, "main.html", response)
 	})
 
 	router.NoRoute(func(c *gin.Context) {
