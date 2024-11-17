@@ -52,6 +52,11 @@ To run this portfolio locally, follow these steps:
     ```
     http://localhost:4040
     ```
+**NOTE**
+- The web application is temporaringly being hosted at:
+  ```
+  http://msheesh.webhop.me:4040
+  ```
 
 ## Technologies Used
 
