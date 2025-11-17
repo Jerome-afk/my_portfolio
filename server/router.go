@@ -59,7 +59,7 @@ func InitServer() *gin.Engine {
 		recipient := "otienojerome6@gmail.com"
 
 		// Email content
-		subject := "New Message from " + name
+		subject := "New Message from Portfolio"
 		body := fmt.Sprintf("Name: %s\nEmail: %s\nMessage: \n%s", name, email, message)
 
 		// Send email

@@ -11,6 +11,8 @@ func main() {
     router := server.InitServer()
 
     log.Println("Server starting on port 4040...")
+    log.Println("Server starting at: http://0.0.0.0:4040")
+
     err := http.ListenAndServe(":4040", router)
     if err != nil {
         log.Fatalf("Could not start server: %s\n", err)
